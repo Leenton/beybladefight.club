@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<meta name="theme-color" content="#bb3333" />
+	<title>Fight Club | Invitation</title>
+	<link href="{{ url_for('static', filename='css/home.css')}}" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='/assets/favicon.ico') }}">
+    <!--
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	
+	 -->
+</head>
+<body>
+	<div class="logo">
+		<img src="./static/assets/title.png">
+	</div>
+
+	
+	<div class="infomation_container">
+		<h1>You have been challanged to enter the Bayblade Arena</h1>
+		<h2>Will you enter the ring?</h2>
+
+		<video autoplay muted loop id="video">
+			<source src="{{ url_for('static', filename='assets/logo.mp4')}}" type="video/mp4">
+		</video>	
+
+		<div class="date_info">
+			<p>18th of May 2022</p>
+			<p>18:00 BST</p>
+			<p>Quay House Basement</p>
+		</div>
+
+
+
+		<form action="./" method="post">
+			<input type="submit" id="Response" name="Response" value="I will" class="button">
+			<input type="submit" id="Response" name="Response" value="I'm a coward" class="button coward">
+		</form> 
+
+		<div class="sponsor_banner">
+			<a href="https://nordvpn.com/youtube/?coupon=crsyoutube&utm_medium=affiliate&utm_term&utm_content=CH1&utm_campaign=off286&utm_source=aff39355"><img src="./static/adverts/nordvpn-b1.gif"></a>
+			<p>Looking to advertise? Contact Leenton Chinyanga to enquire more.</p>
+			<a href="./privacy"><p>Our privacy policy can be seen here.</p></a>
+		</div>
+	</div>
+</body>
+
+<script>
+
+
+</script>
+</html>

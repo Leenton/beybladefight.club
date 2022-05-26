@@ -1,0 +1,67 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    font-family: "Walter Turncoat";
+    background-color: #1f1f1f;
+    background: linear-gradient(to bottom right, rgb(216, 31, 31), rgb(255, 166, 0));
+    background-attachment: fixed; 
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    max-width: 60rem;
+}
+
+.infomation_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 60rem;
+}
+
+.infomation_container h1{
+    max-width: 45rem;
+    font-size: 2.5rem;
+}
+
+.infomation_container video{
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 60rem;
+}
+
+.infomation_container form{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin: 2.5rem;
+    width: 100%
+}
+.button{
+    background-color: #b40c0c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.coward{
+    background-color: rgb(248, 211, 0);
+}
+

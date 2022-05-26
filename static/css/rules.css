@@ -1,0 +1,90 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0%;
+    font-family: "Walter Turncoat";
+    background-color: #1f1f1f;
+    background: linear-gradient(to top left, rgb(0, 81, 255), rgb(0, 255, 170));
+    background-attachment: fixed; 
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 15rem;
+    padding-top: 5rem;
+    width: 60rem;
+}
+
+.item{
+    padding: 1rem;
+    max-width: 15rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 60rem;
+}
+.rules{
+    background-image: url("../assets/red-logo-t.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.rules li{
+    font-size: 1.5rem;
+    list-style: upper-roman;
+    padding-top: 2rem;
+    font-weight: 900;
+}
+
+.input_section{
+    background-color: #00ffaa9d;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.input_section h1{
+    text-align: center;
+}
+
+.input_section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.input_section input[Type=Text]{
+    padding-block: 10px;
+    border: none;
+    margin-top: 30px;
+    font-size: 25px;
+    width: 80%; 
+    background-color: #00ffaa;
+}
+
+input[Type=Submit] {
+    padding-block: 10px;
+    border: none;
+    margin-top: 30px;
+    width: 80%;  
+    font-size: 25px;
+    background-color: #0f8cc1;
+}
+.sponsor_banner img{
+    width: 100%;
+}

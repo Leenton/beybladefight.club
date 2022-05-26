@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<meta name="theme-color" content="#bb3333" />
+	<title>FighT Club | Rules</title>
+	<link href="{{ url_for('static', filename='css/rules.css')}}" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='/assets/favicon.ico') }}">
+    <!--
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	
+	 -->
+</head>
+
+<body>
+    <div class="logo">
+        <img class="item" src="./static/gifs/{{gif}}">
+		<img class="item" src="./static/assets/rules.png">
+        <img class="item" src="./static/gifs/{{gif}}">
+	</div>
+
+
+    <video hidden autoplay id="video">
+        <source src="{{ url_for('static', filename='assets/rules-background.mp4')}}" type="video/mp4">
+    </video>
+
+
+    <div class="content">
+        {% if state == "Your name is too long, shorten it a bit mate, this site has TOP notch security, don't think you can enter some bullshit to try and break it." %}
+        <div clas="warning">
+            <p class="warning">{{state}}</p>
+        
+        </div>
+        {% endif %} 
+
+        <div class="rules rules_wraper">
+            <ol>
+                <li>You don't talk about this. If you talk about this to people not invited, we will find out and it will be dealt with.</li>
+                <li>Only offical beyblades allowed, no knock offs.</li>
+                <li>Modding your beyblades is allowed, this is a street battle after all.</li>
+                <li>Once the blades are spinning in the arena, anything is legal(Outside of physical harm to your opponent's blade or interacting with the arena in anyway, harm to your opponent is legal).</li>
+                <li>If you 3D print your whole ass beyblade it's allowed (Just for Harry Dennett).</li>
+                <li>We play for keeps, loser gives their bayblade to the victor.</li>
+                <li>Best of 5 wins</li>
+                <li>Dogs can't play basketball</li>
+            </ol>
+        </div>
+
+        <div class="input_section">
+            {% if state != 'registered' %}
+            <h1>Enter your name to register</h1>
+            <form action="./rules" method="post">
+                <input type="text" id="name" name="name"><br>
+                <input type="submit" value="Register" >
+            </form> 
+            {% endif %} 
+        </div>
+
+        <div class="sponsor_banner">
+            <a href="https://www.manscaped.com/?utm_source=MxR%20Plays&utm_medium=Influencer&discount=xOpM4zX3L7R1&amount=20percent&name=MxR%20Plays&utm_content=MxR%20Plays"><img src="./static/adverts/manscaped.png"></a>
+            <p>Looking to advertise? Contact Leenton Chinyanga to enquire more.</p>
+            <a href="./privacy"><p>Our privacy policy can be seen here.</p></a>
+        </div>
+    </div>
+</body> 
